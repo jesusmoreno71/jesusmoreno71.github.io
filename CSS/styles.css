@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #d53369;
+    background: linear-gradient(to top,#d53369,#cbad6d);
+    cursor: url('./../Img/Gato\ boca\ cerrada\ 70px.png'), auto; /* Cambiamos el cursor por una imagen personalizada */
+
+    &::after { /* Truco para hacer blur el fondo */
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255, .3);
+        position: absolute;
+        top: 0;
+        left: 0; /* Posicionamos esquina superior izquierda*/
+        backdrop-filter: blur(80px); /* Decimos cuanto blur va a tener */
+        z-index: 0; /*Mandamos el caja/blur hacia atras */
+    }
+}
+
+.contenedor {
+    position: relative;
+    z-index: 1; /* Mandamos el contenido del contenedor por encima del blur */
+    
+    width: 90%;
+    max-width: 700px; /* Definimos ancho maximo */
+    margin: auto;
+    padding: 40px 0px;
+
+    .bio {
+        text-align: center; /** Centramos el texto y imagen */
+        margin-bottom: 40px;
+
+        .foto {
+            width: 150px;
+            height: auto;
+            aspect-ratio: 1/1; /* Mantenemos la relacion de aspecto */
+            object-fit: cover; /* Cubrimos el espacio sin deformar la imagen */
+            border-radius: 100px; /* Hacemos la imagen circular */
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 7px 0.2px #000; /* Agregamos una sombra a la imagen para darle profundidad */
+        }
+
+        .nombre {
+            margin-bottom: 5px;
+            font-size: 32px;
+        }
+
+        .descripcion {
+            font-size: 18px;
+        }
+    }
+
+    .links {
+        .link {
+            color: #000;
+            border: 3px solid #000;
+            border-radius: 10px;
+            text-align: center;
+            display: block;
+            margin-bottom: 20px; /** Separacion entre los links */
+            text-decoration: none; /* Quitamos el subrayado de los links */
+            text-transform: uppercase; /* Ponemos el texto en mayusculas */
+            padding: 20px; /* Agregamos espacio dentro del link */
+            font-weight: 700;
+            transition: 0.2s ease; /* Agregamos una transicion para el hover */
+            box-shadow: 
+                1px 1px 0px 0px #000, 
+                2px 2px 0px 0px #000,
+                3px 3px 0px 0px #000,
+                4px 4px 0px 0px #000
+            ; /* Agregamos un efecto de sombra para darle profundidad al link */
+            transform: translate(-5px, -5px); /* Desplazamos un poco los links para Efecto de boton presionado */
+
+            &:hover {
+                color: #fff;
+                box-shadow: 0px 0px 0px 0px; /* Quitamos la sombra para el hover */
+                transform: translate(0, 0); /* Devolvemos el link a su posicion original Efecto de boton presionado */
+                cursor: url('./../Img/Gato\ boca\ abierta\ 70px.png'), auto; /* Cambiamos el cursor por una imagen personalizada al hacer hover */
+            }
+
+            &.youtube:hover {
+                background: #ff0000;
+            }
+
+            &.X:hover {
+                background: #000;
+            }
+
+            &.instagram:hover {
+                background: #405DE6;
+                background: linear-gradient(to top, #833AB4, #C13584);
+            }
+
+            &.twitch:hover {
+                background: #6732b6;
+            }
+        }
+    }
+}
