@@ -1,23 +1,23 @@
-Linktree Clone
+Personal Linktree & Bio Page
 
-A responsive landing page inspired by Linktree, designed to unify social media profiles, portfolio links, and contact channels into a single, clean interface.
+Personal landing page hosted via GitHub Pages, designed to unify social media profiles, portfolio projects, and key contact channels into a single, clean interface.
 
 🚀 Overview
 
-This repository features a minimal and modern link-in-bio page built to showcase key online profiles and external resources. It focuses on clean visual hierarchy, smooth hover interactions, and seamless responsiveness across all screen sizes.
+This repository hosts my primary bio-link website built with clean HTML5 and CSS3. It delivers a fast, mobile-friendly experience for showcasing online profiles and external resources.
 
 ✨ Key Features
 
-- Centralized Links: Structured layout for quick navigation to social profiles and portfolio pages.
-- Responsive Layout: Optimized for mobile, tablet, and desktop viewports.
-- Interactive UI: Smooth button states and hover effects for an enhanced user experience.
-- Semantic Structure: Clean HTML5 markup ensuring good accessibility practices.
+- Personal Link Aggregator: Quick access to active social accounts, portfolios, and contact channels.
+- Responsive Design: Optimized for seamless display across mobile, tablet, and desktop devices.
+- Interactive UI: Smooth hover states and custom visual transitions.
+- Hosted via GitHub Pages: Lightweight, fast, and accessible directly via custom domain/root URL.
 
 🛠️ Tech Stack
 
 - HTML5
-- CSS3 (Flexbox & Custom Styling)
+- CSS3 (Flexbox & Custom Properties)
 
-📌 Project Purpose
+📌 Live Demo
 
-Created as a practical project to master component layout, mobile-first design, and clean CSS styling techniques for personal branding and link aggregation platforms.
+Check out the live page here: [https://jesusmoreno71.github.io](https://jesusmoreno71.github.io)
